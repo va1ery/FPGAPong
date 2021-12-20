@@ -1,6 +1,6 @@
 Fitter report for VGA
-Thu Oct 21 10:28:14 2021
-Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Mon Dec 20 12:38:19 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -49,28 +49,28 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Oct 21 10:28:14 2021       ;
-; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Fitter Status                      ; Successful - Mon Dec 20 12:38:18 2021       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; VGA                                         ;
 ; Family                             ; MAX 10                                      ;
@@ -90,72 +90,78 @@ agreement for further details.
 +------------------------------------+---------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Settings                                                                                                                                            ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Option                                                                     ; Setting                               ; Default Value                         ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
-; Device                                                                     ; 10M50DAF484C7G                        ;                                       ;
-; Minimum Core Junction Temperature                                          ; 0                                     ;                                       ;
-; Maximum Core Junction Temperature                                          ; 85                                    ;                                       ;
-; Fit Attempts to Skip                                                       ; 0                                     ; 0.0                                   ;
-; Use smart compilation                                                      ; Off                                   ; Off                                   ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On                                    ;
-; Enable compact report table                                                ; Off                                   ; Off                                   ;
-; Auto Merge PLLs                                                            ; On                                    ; On                                    ;
-; Router Timing Optimization Level                                           ; Normal                                ; Normal                                ;
-; Perform Clocking Topology Analysis During Routing                          ; Off                                   ; Off                                   ;
-; Placement Effort Multiplier                                                ; 1.0                                   ; 1.0                                   ;
-; Router Effort Multiplier                                                   ; 1.0                                   ; 1.0                                   ;
-; Optimize Hold Timing                                                       ; All Paths                             ; All Paths                             ;
-; Optimize Multi-Corner Timing                                               ; On                                    ; On                                    ;
-; PowerPlay Power Optimization During Fitting                                ; Normal compilation                    ; Normal compilation                    ;
-; SSN Optimization                                                           ; Off                                   ; Off                                   ;
-; Optimize Timing                                                            ; Normal compilation                    ; Normal compilation                    ;
-; Optimize Timing for ECOs                                                   ; Off                                   ; Off                                   ;
-; Regenerate Full Fit Report During ECO Compiles                             ; Off                                   ; Off                                   ;
-; Optimize IOC Register Placement for Timing                                 ; Normal                                ; Normal                                ;
-; Final Placement Optimizations                                              ; Automatically                         ; Automatically                         ;
-; Fitter Initial Placement Seed                                              ; 1                                     ; 1                                     ;
-; Periphery to Core Placement and Routing Optimization                       ; Off                                   ; Off                                   ;
-; PCI I/O                                                                    ; Off                                   ; Off                                   ;
-; Weak Pull-Up Resistor                                                      ; Off                                   ; Off                                   ;
-; Enable Bus-Hold Circuitry                                                  ; Off                                   ; Off                                   ;
-; Auto Packed Registers                                                      ; Auto                                  ; Auto                                  ;
-; Auto Delay Chains                                                          ; On                                    ; On                                    ;
-; Auto Delay Chains for High Fanout Input Pins                               ; Off                                   ; Off                                   ;
-; Allow Single-ended Buffer for Differential-XSTL Input                      ; Off                                   ; Off                                   ;
-; Treat Bidirectional Pin as Output Pin                                      ; Off                                   ; Off                                   ;
-; Perform Physical Synthesis for Combinational Logic for Fitting             ; Off                                   ; Off                                   ;
-; Perform Physical Synthesis for Combinational Logic for Performance         ; Off                                   ; Off                                   ;
-; Perform Register Duplication for Performance                               ; Off                                   ; Off                                   ;
-; Perform Logic to Memory Mapping for Fitting                                ; Off                                   ; Off                                   ;
-; Perform Register Retiming for Performance                                  ; Off                                   ; Off                                   ;
-; Perform Asynchronous Signal Pipelining                                     ; Off                                   ; Off                                   ;
-; Fitter Effort                                                              ; Auto Fit                              ; Auto Fit                              ;
-; Physical Synthesis Effort Level                                            ; Normal                                ; Normal                                ;
-; Logic Cell Insertion - Logic Duplication                                   ; Auto                                  ; Auto                                  ;
-; Auto Register Duplication                                                  ; Auto                                  ; Auto                                  ;
-; Auto Global Clock                                                          ; On                                    ; On                                    ;
-; Auto Global Register Control Signals                                       ; On                                    ; On                                    ;
-; Reserve all unused pins                                                    ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
-; Synchronizer Identification                                                ; Auto                                  ; Auto                                  ;
-; Enable Beneficial Skew Optimization                                        ; On                                    ; On                                    ;
-; Optimize Design for Metastability                                          ; On                                    ; On                                    ;
-; Force Fitter to Avoid Periphery Placement Warnings                         ; Off                                   ; Off                                   ;
-; Enable input tri-state on active configuration pins in user mode           ; Off                                   ; Off                                   ;
-+----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                                                                    ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Option                                                             ; Setting                               ; Default Value                         ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
+; Device                                                             ; 10M50DAF484C7G                        ;                                       ;
+; Minimum Core Junction Temperature                                  ; 0                                     ;                                       ;
+; Maximum Core Junction Temperature                                  ; 85                                    ;                                       ;
+; Fit Attempts to Skip                                               ; 0                                     ; 0.0                                   ;
+; Use smart compilation                                              ; Off                                   ; Off                                   ;
+; Enable parallel Assembler and Timing Analyzer during compilation   ; On                                    ; On                                    ;
+; Enable compact report table                                        ; Off                                   ; Off                                   ;
+; Auto Merge PLLs                                                    ; On                                    ; On                                    ;
+; Router Timing Optimization Level                                   ; Normal                                ; Normal                                ;
+; Perform Clocking Topology Analysis During Routing                  ; Off                                   ; Off                                   ;
+; Placement Effort Multiplier                                        ; 1.0                                   ; 1.0                                   ;
+; Router Effort Multiplier                                           ; 1.0                                   ; 1.0                                   ;
+; Optimize Hold Timing                                               ; All Paths                             ; All Paths                             ;
+; Optimize Multi-Corner Timing                                       ; On                                    ; On                                    ;
+; Power Optimization During Fitting                                  ; Normal compilation                    ; Normal compilation                    ;
+; SSN Optimization                                                   ; Off                                   ; Off                                   ;
+; Optimize Timing                                                    ; Normal compilation                    ; Normal compilation                    ;
+; Optimize Timing for ECOs                                           ; Off                                   ; Off                                   ;
+; Regenerate Full Fit Report During ECO Compiles                     ; Off                                   ; Off                                   ;
+; Optimize IOC Register Placement for Timing                         ; Normal                                ; Normal                                ;
+; Final Placement Optimizations                                      ; Automatically                         ; Automatically                         ;
+; Fitter Initial Placement Seed                                      ; 1                                     ; 1                                     ;
+; Periphery to Core Placement and Routing Optimization               ; Off                                   ; Off                                   ;
+; PCI I/O                                                            ; Off                                   ; Off                                   ;
+; Weak Pull-Up Resistor                                              ; Off                                   ; Off                                   ;
+; Enable Bus-Hold Circuitry                                          ; Off                                   ; Off                                   ;
+; Auto Packed Registers                                              ; Auto                                  ; Auto                                  ;
+; Auto Delay Chains                                                  ; On                                    ; On                                    ;
+; Auto Delay Chains for High Fanout Input Pins                       ; Off                                   ; Off                                   ;
+; Allow Single-ended Buffer for Differential-XSTL Input              ; Off                                   ; Off                                   ;
+; Treat Bidirectional Pin as Output Pin                              ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Fitting     ; Off                                   ; Off                                   ;
+; Perform Physical Synthesis for Combinational Logic for Performance ; Off                                   ; Off                                   ;
+; Perform Register Duplication for Performance                       ; Off                                   ; Off                                   ;
+; Perform Logic to Memory Mapping for Fitting                        ; Off                                   ; Off                                   ;
+; Perform Register Retiming for Performance                          ; Off                                   ; Off                                   ;
+; Perform Asynchronous Signal Pipelining                             ; Off                                   ; Off                                   ;
+; Fitter Effort                                                      ; Auto Fit                              ; Auto Fit                              ;
+; Physical Synthesis Effort Level                                    ; Normal                                ; Normal                                ;
+; Logic Cell Insertion - Logic Duplication                           ; Auto                                  ; Auto                                  ;
+; Auto Register Duplication                                          ; Auto                                  ; Auto                                  ;
+; Auto Global Clock                                                  ; On                                    ; On                                    ;
+; Auto Global Register Control Signals                               ; On                                    ; On                                    ;
+; Reserve all unused pins                                            ; As input tri-stated with weak pull-up ; As input tri-stated with weak pull-up ;
+; Synchronizer Identification                                        ; Auto                                  ; Auto                                  ;
+; Enable Beneficial Skew Optimization                                ; On                                    ; On                                    ;
+; Optimize Design for Metastability                                  ; On                                    ; On                                    ;
+; Force Fitter to Avoid Periphery Placement Warnings                 ; Off                                   ; Off                                   ;
+; Enable input tri-state on active configuration pins in user mode   ; Off                                   ; Off                                   ;
++--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.05        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   4.8%      ;
++----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------------------------+
@@ -208,7 +214,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/QuarusIIProjects/pong/output_files/VGA.pin.
+The pin-out file can be found in /home/leo/FPGAPong/output_files/VGA.pin.
 
 
 +----------------------------------------------------------------------+
@@ -235,7 +241,7 @@ The pin-out file can be found in C:/QuarusIIProjects/pong/output_files/VGA.pin.
 ;     -- Dedicated logic registers            ; 221 / 49,760 ( < 1 % ) ;
 ;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 77 / 3,110 ( 2 % )     ;
+; Total LABs:  partially or completely used   ; 71 / 3,110 ( 2 % )     ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 38 / 360 ( 11 % )      ;
 ;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
@@ -255,11 +261,11 @@ The pin-out file can be found in C:/QuarusIIProjects/pong/output_files/VGA.pin.
 ; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 0.6% / 0.6% / 0.7%     ;
-; Peak interconnect usage (total/H/V)         ; 12.5% / 11.5% / 13.9%  ;
+; Average interconnect usage (total/H/V)      ; 0.6% / 0.5% / 0.7%     ;
+; Peak interconnect usage (total/H/V)         ; 9.3% / 8.6% / 10.3%    ;
 ; Maximum fan-out                             ; 181                    ;
 ; Highest non-global fan-out                  ; 181                    ;
-; Total fan-out                               ; 3214                   ;
+; Total fan-out                               ; 3210                   ;
 ; Average fan-out                             ; 2.73                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -292,7 +298,7 @@ The pin-out file can be found in C:/QuarusIIProjects/pong/output_files/VGA.pin.
 ;     -- Dedicated logic registers            ; 221 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 77 / 3110 ( 2 % )     ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 71 / 3110 ( 2 % )     ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 38                    ; 0                              ;
@@ -310,7 +316,7 @@ The pin-out file can be found in C:/QuarusIIProjects/pong/output_files/VGA.pin.
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 3220                  ; 8                              ;
+;     -- Total Connections                    ; 3216                  ; 8                              ;
 ;     -- Registered Connections               ; 955                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -970,15 +976,15 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name     ; Entity Name     ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------+-----------------+--------------+
 ; |VGA                       ; 856 (3)     ; 221 (0)                   ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 38   ; 0            ; 635 (3)      ; 5 (0)             ; 216 (0)          ; 0          ; |VGA                    ; VGA             ; work         ;
-;    |div_gen:U0|            ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 1 (1)             ; 0 (0)            ; 0          ; |VGA|div_gen:U0         ; div_gen         ; work         ;
-;    |div_gen:u3|            ; 34 (34)     ; 19 (19)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 1 (1)             ; 18 (18)          ; 0          ; |VGA|div_gen:u3         ; div_gen         ; work         ;
+;    |div_gen:U0|            ; 2 (2)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 1 (1)            ; 0          ; |VGA|div_gen:U0         ; div_gen         ; work         ;
+;    |div_gen:u3|            ; 34 (34)     ; 19 (19)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 19 (19)          ; 0          ; |VGA|div_gen:u3         ; div_gen         ; work         ;
 ;    |div_gen:u5|            ; 1 (1)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0          ; |VGA|div_gen:u5         ; div_gen         ; work         ;
-;    |div_gen:u6|            ; 31 (31)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 17 (17)          ; 0          ; |VGA|div_gen:u6         ; div_gen         ; work         ;
-;    |div_gen:u7|            ; 33 (33)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (17)      ; 0 (0)             ; 16 (16)          ; 0          ; |VGA|div_gen:u7         ; div_gen         ; work         ;
-;    |div_gen:u8|            ; 29 (29)     ; 15 (15)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 0 (0)             ; 15 (15)          ; 0          ; |VGA|div_gen:u8         ; div_gen         ; work         ;
-;    |image_generator:u2|    ; 639 (639)   ; 128 (128)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 511 (511)    ; 2 (2)             ; 126 (126)        ; 0          ; |VGA|image_generator:u2 ; image_generator ; work         ;
-;    |score_display:u4|      ; 34 (34)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 34 (34)      ; 0 (0)             ; 0 (0)            ; 0          ; |VGA|score_display:u4   ; score_display   ; work         ;
-;    |sync_generator:u1|     ; 50 (50)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 26 (26)      ; 1 (1)             ; 23 (23)          ; 0          ; |VGA|sync_generator:u1  ; sync_generator  ; work         ;
+;    |div_gen:u6|            ; 32 (32)     ; 17 (17)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 0 (0)             ; 17 (17)          ; 0          ; |VGA|div_gen:u6         ; div_gen         ; work         ;
+;    |div_gen:u7|            ; 33 (33)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 0 (0)             ; 17 (17)          ; 0          ; |VGA|div_gen:u7         ; div_gen         ; work         ;
+;    |div_gen:u8|            ; 29 (29)     ; 15 (15)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 13 (13)      ; 0 (0)             ; 16 (16)          ; 0          ; |VGA|div_gen:u8         ; div_gen         ; work         ;
+;    |image_generator:u2|    ; 645 (645)   ; 128 (128)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 517 (517)    ; 4 (4)             ; 124 (124)        ; 0          ; |VGA|image_generator:u2 ; image_generator ; work         ;
+;    |score_display:u4|      ; 34 (34)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 4 (4)            ; 0          ; |VGA|score_display:u4   ; score_display   ; work         ;
+;    |sync_generator:u1|     ; 50 (50)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 25 (25)      ; 1 (1)             ; 24 (24)          ; 0          ; |VGA|sync_generator:u1  ; sync_generator  ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1018,14 +1024,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; B[2]                ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; B[3]                ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; reset               ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
-; direction_switch[1] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
-; direction_switch[0] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; direction_switch[3] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
-; direction_switch[2] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; direction_switch[1] ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; direction_switch[0] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; direction_switch[3] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
+; direction_switch[2] ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; clk                 ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 ; start_game          ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 ; ball_speed[0]       ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
-; ball_speed[1]       ; Input    ; --            ; (6) 868 ps    ; --                    ; --  ; --   ;
+; ball_speed[1]       ; Input    ; (6) 868 ps    ; --            ; --                    ; --  ; --   ;
 +---------------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -1142,11 +1148,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - sync_generator:u1|Vcount[7]           ; 0                 ; 0       ;
 ;      - sync_generator:u1|Vcount[8]           ; 0                 ; 0       ;
 ;      - sync_generator:u1|Vcount[9]           ; 0                 ; 0       ;
-;      - image_generator:u2|state              ; 1                 ; 0       ;
+;      - image_generator:u2|state              ; 0                 ; 0       ;
 ;      - sync_generator:u1|Vactive~0           ; 0                 ; 0       ;
 ;      - sync_generator:u1|Hactive~1           ; 0                 ; 0       ;
 ;      - image_generator:u2|row_counter[9]~27  ; 0                 ; 0       ;
-;      - image_generator:u2|col_counter[9]~27  ; 1                 ; 0       ;
+;      - image_generator:u2|col_counter[9]~27  ; 0                 ; 0       ;
 ;      - div_gen:u3|temp                       ; 0                 ; 0       ;
 ;      - div_gen:u5|temp                       ; 0                 ; 0       ;
 ;      - div_gen:u6|temp                       ; 0                 ; 0       ;
@@ -1217,43 +1223,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - div_gen:u8|Qt[5]                      ; 0                 ; 0       ;
 ;      - div_gen:u8|Qt[4]                      ; 0                 ; 0       ;
 ; direction_switch[1]                          ;                   ;         ;
-;      - image_generator:u2|paddle1_pos_y~0    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y[0]~1 ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~2    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~3    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~4    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~5    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~6    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~7    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~8    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~9    ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~10   ; 0                 ; 6       ;
-;      - image_generator:u2|paddle1_pos_y~11   ; 0                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~0    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y[8]~1 ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~2    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~3    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~4    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~5    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~6    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~7    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~8    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~9    ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~10   ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y~11   ; 1                 ; 6       ;
 ; direction_switch[0]                          ;                   ;         ;
-;      - image_generator:u2|paddle1_pos_y[0]~1 ; 1                 ; 6       ;
+;      - image_generator:u2|paddle1_pos_y[8]~1 ; 0                 ; 6       ;
 ; direction_switch[3]                          ;                   ;         ;
-;      - image_generator:u2|paddle2_pos_y~0    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y[3]~1 ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~2    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~3    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~4    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~5    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~6    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~7    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~8    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~9    ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~10   ; 1                 ; 6       ;
-;      - image_generator:u2|paddle2_pos_y~11   ; 1                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~0    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y[1]~1 ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~2    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~3    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~4    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~5    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~6    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~7    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~8    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~9    ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~10   ; 0                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y~11   ; 0                 ; 6       ;
 ; direction_switch[2]                          ;                   ;         ;
-;      - image_generator:u2|paddle2_pos_y[3]~1 ; 1                 ; 6       ;
+;      - image_generator:u2|paddle2_pos_y[1]~1 ; 0                 ; 6       ;
 ; clk                                          ;                   ;         ;
 ; start_game                                   ;                   ;         ;
 ;      - image_generator:u2|state~1            ; 0                 ; 6       ;
 ; ball_speed[0]                                ;                   ;         ;
 ;      - Mux0~0                                ; 1                 ; 0       ;
 ; ball_speed[1]                                ;                   ;         ;
-;      - Mux0~0                                ; 1                 ; 6       ;
-;      - rtl~0                                 ; 1                 ; 6       ;
+;      - Mux0~0                                ; 0                 ; 6       ;
+;      - rtl~0                                 ; 0                 ; 6       ;
 +----------------------------------------------+-------------------+---------+
 
 
@@ -1262,27 +1268,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                    ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; clk                                     ; PIN_N14            ; 5       ; Clock                      ; no     ; --                   ; --               ; --                        ;
 ; clk                                     ; PIN_N14            ; 65      ; Clock                      ; yes    ; Global Clock         ; GCLK9            ; --                        ;
-; div_gen:U0|temp                         ; FF_X64_Y51_N31     ; 3       ; Clock                      ; no     ; --                   ; --               ; --                        ;
-; div_gen:U0|temp                         ; FF_X64_Y51_N31     ; 86      ; Clock                      ; yes    ; Global Clock         ; GCLK13           ; --                        ;
-; div_gen:u3|Equal0~5                     ; LCCOMB_X71_Y52_N24 ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; div_gen:u3|temp                         ; FF_X67_Y52_N31     ; 20      ; Clock                      ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; image_generator:u2|Ball_direction[2]~10 ; LCCOMB_X65_Y50_N22 ; 21      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; image_generator:u2|col_counter[9]~27    ; LCCOMB_X67_Y44_N0  ; 10      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; image_generator:u2|paddle1_pos_y[0]~1   ; LCCOMB_X63_Y45_N22 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; image_generator:u2|paddle2_pos_y[3]~1   ; LCCOMB_X60_Y49_N0  ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; image_generator:u2|process_2~0          ; LCCOMB_X65_Y50_N28 ; 26      ; Async. clear, Latch enable ; yes    ; Global Clock         ; GCLK11           ; --                        ;
-; image_generator:u2|row_counter[9]~27    ; LCCOMB_X66_Y44_N0  ; 10      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
-; image_generator:u2|score1[29]~41        ; LCCOMB_X71_Y49_N12 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
-; image_generator:u2|score1[31]~43        ; LCCOMB_X71_Y48_N8  ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; image_generator:u2|score2[0]~44         ; LCCOMB_X71_Y49_N30 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; image_generator:u2|score2[30]~43        ; LCCOMB_X71_Y49_N0  ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; clk                                     ; PIN_N14            ; 5       ; Clock                      ; no     ; --                   ; --               ; --                        ;
+; div_gen:U0|temp                         ; FF_X75_Y50_N17     ; 3       ; Clock                      ; no     ; --                   ; --               ; --                        ;
+; div_gen:U0|temp                         ; FF_X75_Y50_N17     ; 86      ; Clock                      ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; div_gen:u3|Equal0~5                     ; LCCOMB_X71_Y51_N4  ; 2       ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; div_gen:u3|temp                         ; FF_X70_Y51_N21     ; 20      ; Clock                      ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; image_generator:u2|Ball_direction[2]~10 ; LCCOMB_X67_Y48_N30 ; 21      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; image_generator:u2|col_counter[9]~27    ; LCCOMB_X69_Y51_N28 ; 10      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; image_generator:u2|paddle1_pos_y[8]~1   ; LCCOMB_X66_Y46_N24 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; image_generator:u2|paddle2_pos_y[1]~1   ; LCCOMB_X61_Y48_N16 ; 10      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; image_generator:u2|process_2~0          ; LCCOMB_X70_Y50_N14 ; 26      ; Async. clear, Latch enable ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; image_generator:u2|row_counter[9]~27    ; LCCOMB_X65_Y51_N24 ; 10      ; Async. clear               ; no     ; --                   ; --               ; --                        ;
+; image_generator:u2|score1[12]~41        ; LCCOMB_X71_Y53_N20 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
+; image_generator:u2|score1[31]~43        ; LCCOMB_X71_Y53_N30 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; image_generator:u2|score2[0]~44         ; LCCOMB_X71_Y53_N14 ; 32      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; image_generator:u2|score2[27]~43        ; LCCOMB_X71_Y53_N16 ; 32      ; Sync. clear                ; no     ; --                   ; --               ; --                        ;
 ; reset                                   ; PIN_F15            ; 181     ; Async. clear, Clock enable ; no     ; --                   ; --               ; --                        ;
-; rtl~0                                   ; LCCOMB_X71_Y51_N18 ; 23      ; Clock                      ; yes    ; Global Clock         ; GCLK12           ; --                        ;
-; sync_generator:u1|Hactive               ; FF_X69_Y44_N25     ; 13      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
-; sync_generator:u1|Hsync                 ; FF_X67_Y44_N31     ; 22      ; Clock                      ; yes    ; Global Clock         ; GCLK7            ; --                        ;
-; sync_generator:u1|Vactive               ; FF_X64_Y44_N29     ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; rtl~0                                   ; LCCOMB_X74_Y51_N30 ; 23      ; Clock                      ; yes    ; Global Clock         ; GCLK5            ; --                        ;
+; sync_generator:u1|Hactive               ; FF_X67_Y51_N3      ; 13      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
+; sync_generator:u1|Hsync                 ; FF_X69_Y51_N23     ; 22      ; Clock                      ; yes    ; Global Clock         ; GCLK12           ; --                        ;
+; sync_generator:u1|Vactive               ; FF_X67_Y51_N9      ; 14      ; Clock enable               ; no     ; --                   ; --               ; --                        ;
 +-----------------------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1292,11 +1298,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                           ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; clk                            ; PIN_N14            ; 65      ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
-; div_gen:U0|temp                ; FF_X64_Y51_N31     ; 86      ; 0                                    ; Global Clock         ; GCLK13           ; --                        ;
-; div_gen:u3|temp                ; FF_X67_Y52_N31     ; 20      ; 2                                    ; Global Clock         ; GCLK10           ; --                        ;
-; image_generator:u2|process_2~0 ; LCCOMB_X65_Y50_N28 ; 26      ; 0                                    ; Global Clock         ; GCLK11           ; --                        ;
-; rtl~0                          ; LCCOMB_X71_Y51_N18 ; 23      ; 0                                    ; Global Clock         ; GCLK12           ; --                        ;
-; sync_generator:u1|Hsync        ; FF_X67_Y44_N31     ; 22      ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; div_gen:U0|temp                ; FF_X75_Y50_N17     ; 86      ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
+; div_gen:u3|temp                ; FF_X70_Y51_N21     ; 20      ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
+; image_generator:u2|process_2~0 ; LCCOMB_X70_Y50_N14 ; 26      ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; rtl~0                          ; LCCOMB_X74_Y51_N30 ; 23      ; 0                                    ; Global Clock         ; GCLK5            ; --                        ;
+; sync_generator:u1|Hsync        ; FF_X69_Y51_N23     ; 22      ; 0                                    ; Global Clock         ; GCLK12           ; --                        ;
 +--------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1305,117 +1311,117 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+---------------------------+
 ; Routing Resource Type ; Usage                     ;
 +-----------------------+---------------------------+
-; Block interconnects   ; 1,125 / 148,641 ( < 1 % ) ;
-; C16 interconnects     ; 50 / 5,382 ( < 1 % )      ;
-; C4 interconnects      ; 674 / 106,704 ( < 1 % )   ;
-; Direct links          ; 220 / 148,641 ( < 1 % )   ;
+; Block interconnects   ; 1,126 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 42 / 5,382 ( < 1 % )      ;
+; C4 interconnects      ; 656 / 106,704 ( < 1 % )   ;
+; Direct links          ; 227 / 148,641 ( < 1 % )   ;
 ; Global clocks         ; 6 / 20 ( 30 % )           ;
-; Local interconnects   ; 373 / 49,760 ( < 1 % )    ;
+; Local interconnects   ; 370 / 49,760 ( < 1 % )    ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )           ;
-; R24 interconnects     ; 39 / 5,406 ( < 1 % )      ;
-; R4 interconnects      ; 738 / 147,764 ( < 1 % )   ;
+; R24 interconnects     ; 41 / 5,406 ( < 1 % )      ;
+; R4 interconnects      ; 698 / 147,764 ( < 1 % )   ;
 +-----------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 11.12) ; Number of LABs  (Total = 77) ;
+; Number of Logic Elements  (Average = 12.06) ; Number of LABs  (Total = 71) ;
 +---------------------------------------------+------------------------------+
-; 1                                           ; 5                            ;
-; 2                                           ; 4                            ;
-; 3                                           ; 2                            ;
-; 4                                           ; 2                            ;
+; 1                                           ; 4                            ;
+; 2                                           ; 1                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 4                            ;
 ; 5                                           ; 0                            ;
-; 6                                           ; 2                            ;
-; 7                                           ; 1                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
-; 9                                           ; 4                            ;
-; 10                                          ; 12                           ;
-; 11                                          ; 5                            ;
-; 12                                          ; 5                            ;
+; 9                                           ; 3                            ;
+; 10                                          ; 10                           ;
+; 11                                          ; 9                            ;
+; 12                                          ; 2                            ;
 ; 13                                          ; 2                            ;
-; 14                                          ; 4                            ;
-; 15                                          ; 7                            ;
-; 16                                          ; 22                           ;
+; 14                                          ; 6                            ;
+; 15                                          ; 6                            ;
+; 16                                          ; 24                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.09) ; Number of LABs  (Total = 77) ;
+; LAB-wide Signals  (Average = 1.13) ; Number of LABs  (Total = 71) ;
 +------------------------------------+------------------------------+
-; 1 Async. clear                     ; 31                           ;
-; 1 Clock                            ; 31                           ;
+; 1 Async. clear                     ; 28                           ;
+; 1 Clock                            ; 25                           ;
 ; 1 Clock enable                     ; 14                           ;
-; 1 Sync. clear                      ; 4                            ;
-; 2 Clocks                           ; 4                            ;
+; 1 Sync. clear                      ; 7                            ;
+; 2 Clocks                           ; 6                            ;
 +------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 11.73) ; Number of LABs  (Total = 77) ;
+; Number of Signals Sourced  (Average = 12.66) ; Number of LABs  (Total = 71) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 16                           ;
-; 2                                            ; 3                            ;
-; 3                                            ; 6                            ;
-; 4                                            ; 0                            ;
-; 5                                            ; 3                            ;
-; 6                                            ; 3                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 1                            ;
-; 9                                            ; 5                            ;
-; 10                                           ; 1                            ;
-; 11                                           ; 4                            ;
+; 1                                            ; 12                           ;
+; 2                                            ; 5                            ;
+; 3                                            ; 1                            ;
+; 4                                            ; 4                            ;
+; 5                                            ; 4                            ;
+; 6                                            ; 1                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 4                            ;
+; 10                                           ; 3                            ;
+; 11                                           ; 3                            ;
 ; 12                                           ; 2                            ;
 ; 13                                           ; 0                            ;
-; 14                                           ; 3                            ;
-; 15                                           ; 2                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 3                            ;
 ; 16                                           ; 2                            ;
-; 17                                           ; 3                            ;
+; 17                                           ; 2                            ;
 ; 18                                           ; 1                            ;
 ; 19                                           ; 0                            ;
-; 20                                           ; 1                            ;
-; 21                                           ; 3                            ;
-; 22                                           ; 5                            ;
-; 23                                           ; 2                            ;
+; 20                                           ; 5                            ;
+; 21                                           ; 2                            ;
+; 22                                           ; 3                            ;
+; 23                                           ; 1                            ;
 ; 24                                           ; 1                            ;
-; 25                                           ; 2                            ;
+; 25                                           ; 4                            ;
 ; 26                                           ; 3                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 0                            ;
+; 27                                           ; 1                            ;
+; 28                                           ; 2                            ;
 ; 29                                           ; 0                            ;
 ; 30                                           ; 0                            ;
 ; 31                                           ; 0                            ;
-; 32                                           ; 4                            ;
+; 32                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
 
 +--------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                        ;
 +-------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 6.30) ; Number of LABs  (Total = 77) ;
+; Number of Signals Sourced Out  (Average = 6.82) ; Number of LABs  (Total = 71) ;
 +-------------------------------------------------+------------------------------+
 ; 0                                               ; 0                            ;
-; 1                                               ; 20                           ;
-; 2                                               ; 5                            ;
+; 1                                               ; 16                           ;
+; 2                                               ; 3                            ;
 ; 3                                               ; 8                            ;
 ; 4                                               ; 5                            ;
-; 5                                               ; 1                            ;
-; 6                                               ; 6                            ;
-; 7                                               ; 1                            ;
-; 8                                               ; 3                            ;
-; 9                                               ; 4                            ;
+; 5                                               ; 3                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 0                            ;
+; 8                                               ; 2                            ;
+; 9                                               ; 9                            ;
 ; 10                                              ; 4                            ;
-; 11                                              ; 4                            ;
-; 12                                              ; 6                            ;
-; 13                                              ; 3                            ;
-; 14                                              ; 2                            ;
-; 15                                              ; 0                            ;
+; 11                                              ; 8                            ;
+; 12                                              ; 3                            ;
+; 13                                              ; 2                            ;
+; 14                                              ; 0                            ;
+; 15                                              ; 2                            ;
 ; 16                                              ; 5                            ;
 +-------------------------------------------------+------------------------------+
 
@@ -1423,44 +1429,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 13.19) ; Number of LABs  (Total = 77) ;
+; Number of Distinct Inputs  (Average = 14.06) ; Number of LABs  (Total = 71) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
-; 1                                            ; 0                            ;
-; 2                                            ; 1                            ;
-; 3                                            ; 4                            ;
-; 4                                            ; 7                            ;
-; 5                                            ; 4                            ;
-; 6                                            ; 4                            ;
+; 1                                            ; 2                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 4                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 2                            ;
 ; 7                                            ; 2                            ;
-; 8                                            ; 0                            ;
-; 9                                            ; 9                            ;
+; 8                                            ; 3                            ;
+; 9                                            ; 12                           ;
 ; 10                                           ; 6                            ;
-; 11                                           ; 3                            ;
-; 12                                           ; 1                            ;
-; 13                                           ; 4                            ;
-; 14                                           ; 1                            ;
+; 11                                           ; 2                            ;
+; 12                                           ; 3                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 2                            ;
 ; 15                                           ; 3                            ;
-; 16                                           ; 3                            ;
-; 17                                           ; 2                            ;
+; 16                                           ; 5                            ;
+; 17                                           ; 0                            ;
 ; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 9                            ;
-; 21                                           ; 1                            ;
-; 22                                           ; 3                            ;
-; 23                                           ; 0                            ;
-; 24                                           ; 2                            ;
-; 25                                           ; 1                            ;
-; 26                                           ; 1                            ;
-; 27                                           ; 0                            ;
-; 28                                           ; 0                            ;
+; 19                                           ; 2                            ;
+; 20                                           ; 8                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 2                            ;
+; 23                                           ; 4                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 3                            ;
+; 28                                           ; 1                            ;
 ; 29                                           ; 0                            ;
 ; 30                                           ; 0                            ;
 ; 31                                           ; 1                            ;
 ; 32                                           ; 0                            ;
-; 33                                           ; 1                            ;
+; 33                                           ; 0                            ;
 ; 34                                           ; 0                            ;
-; 35                                           ; 1                            ;
+; 35                                           ; 0                            ;
 ; 36                                           ; 2                            ;
 +----------------------------------------------+------------------------------+
 
@@ -1483,33 +1489,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 ; Status       ; ID        ; Category                          ; Rule Description                                                                                     ; Severity ; Information                                                              ; Area                ; Extra Information ;
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
-; Pass         ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.                    ; Critical ; No Global Signal assignments found.                                      ; I/O                 ;                   ;
+; Pass         ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000004 ; Voltage Compatibility Checks      ; The I/O bank should support the requested VCCIO.                                                     ; Critical ; No IOBANK_VCCIO assignments found.                                       ; I/O                 ;                   ;
 ; Inapplicable ; IO_000005 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VREF values.                                                  ; Critical ; No VREF I/O Standard assignments found.                                  ; I/O                 ;                   ;
 ; Pass         ; IO_000006 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VCCIO values.                                                 ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                                    ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000008 ; Valid Location Checks             ; Checks for reserved locations.                                                                       ; Critical ; No reserved LogicLock region found.                                      ; I/O                 ;                   ;
-; Pass         ; IO_000009 ; I/O Properties Checks for One I/O ; The location should support the requested I/O standard.                                              ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Pass         ; IO_000010 ; I/O Properties Checks for One I/O ; The location should support the requested I/O direction.                                             ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000011 ; I/O Properties Checks for One I/O ; The location should support the requested Current Strength.                                          ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
-; Pass         ; IO_000012 ; I/O Properties Checks for One I/O ; The location should support the requested On Chip Termination value.                                 ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000013 ; I/O Properties Checks for One I/O ; The location should support the requested Bus Hold value.                                            ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O                 ;                   ;
-; Inapplicable ; IO_000014 ; I/O Properties Checks for One I/O ; The location should support the requested Weak Pull Up value.                                        ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O                 ;                   ;
-; Pass         ; IO_000015 ; I/O Properties Checks for One I/O ; The location should support the requested PCI Clamp Diode.                                           ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000018 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Current Strength.                                      ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
-; Pass         ; IO_000019 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested On Chip Termination value.                             ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Pass         ; IO_000020 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested PCI Clamp Diode.                                       ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000021 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Weak Pull Up value.                                    ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O                 ;                   ;
-; Inapplicable ; IO_000022 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Bus Hold value.                                        ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O                 ;                   ;
-; Inapplicable ; IO_000023 ; I/O Properties Checks for One I/O ; The I/O standard should support the Open Drain value.                                                ; Critical ; No open drain assignments found.                                         ; I/O                 ;                   ;
-; Pass         ; IO_000024 ; I/O Properties Checks for One I/O ; The I/O direction should support the On Chip Termination value.                                      ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000026 ; I/O Properties Checks for One I/O ; On Chip Termination and Current Strength should not be used at the same time.                        ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000027 ; I/O Properties Checks for One I/O ; Weak Pull Up and Bus Hold should not be used at the same time.                                       ; Critical ; No Enable Bus-Hold Circuitry or Weak Pull-Up Resistor assignments found. ; I/O                 ;                   ;
-; Inapplicable ; IO_000045 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Slew Rate value.                                       ; Critical ; No Slew Rate assignments found.                                          ; I/O                 ;                   ;
-; Inapplicable ; IO_000046 ; I/O Properties Checks for One I/O ; The location should support the requested Slew Rate value.                                           ; Critical ; No Slew Rate assignments found.                                          ; I/O                 ;                   ;
 ; Inapplicable ; IO_000047 ; I/O Properties Checks for One I/O ; On Chip Termination and Slew Rate should not be used at the same time.                               ; Critical ; No Slew Rate assignments found.                                          ; I/O                 ;                   ;
+; Inapplicable ; IO_000046 ; I/O Properties Checks for One I/O ; The location should support the requested Slew Rate value.                                           ; Critical ; No Slew Rate assignments found.                                          ; I/O                 ;                   ;
+; Inapplicable ; IO_000045 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Slew Rate value.                                       ; Critical ; No Slew Rate assignments found.                                          ; I/O                 ;                   ;
+; Inapplicable ; IO_000027 ; I/O Properties Checks for One I/O ; Weak Pull Up and Bus Hold should not be used at the same time.                                       ; Critical ; No Enable Bus-Hold Circuitry or Weak Pull-Up Resistor assignments found. ; I/O                 ;                   ;
+; Inapplicable ; IO_000026 ; I/O Properties Checks for One I/O ; On Chip Termination and Current Strength should not be used at the same time.                        ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
+; Pass         ; IO_000024 ; I/O Properties Checks for One I/O ; The I/O direction should support the On Chip Termination value.                                      ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
+; Inapplicable ; IO_000023 ; I/O Properties Checks for One I/O ; The I/O standard should support the Open Drain value.                                                ; Critical ; No open drain assignments found.                                         ; I/O                 ;                   ;
+; Inapplicable ; IO_000022 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Bus Hold value.                                        ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O                 ;                   ;
+; Inapplicable ; IO_000021 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Weak Pull Up value.                                    ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O                 ;                   ;
+; Pass         ; IO_000020 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested PCI Clamp Diode.                                       ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
+; Pass         ; IO_000019 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested On Chip Termination value.                             ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
+; Inapplicable ; IO_000018 ; I/O Properties Checks for One I/O ; The I/O standard should support the requested Current Strength.                                      ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
+; Pass         ; IO_000015 ; I/O Properties Checks for One I/O ; The location should support the requested PCI Clamp Diode.                                           ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
+; Inapplicable ; IO_000014 ; I/O Properties Checks for One I/O ; The location should support the requested Weak Pull Up value.                                        ; Critical ; No Weak Pull-Up Resistor assignments found.                              ; I/O                 ;                   ;
+; Inapplicable ; IO_000013 ; I/O Properties Checks for One I/O ; The location should support the requested Bus Hold value.                                            ; Critical ; No Enable Bus-Hold Circuitry assignments found.                          ; I/O                 ;                   ;
+; Pass         ; IO_000012 ; I/O Properties Checks for One I/O ; The location should support the requested On Chip Termination value.                                 ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
+; Inapplicable ; IO_000011 ; I/O Properties Checks for One I/O ; The location should support the requested Current Strength.                                          ; Critical ; No Current Strength assignments found.                                   ; I/O                 ;                   ;
+; Pass         ; IO_000010 ; I/O Properties Checks for One I/O ; The location should support the requested I/O direction.                                             ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
+; Pass         ; IO_000009 ; I/O Properties Checks for One I/O ; The location should support the requested I/O standard.                                              ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000033 ; Electromigration Checks           ; Current density for consecutive I/Os should not exceed 160mA for row I/Os and 160mA for column I/Os. ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000034 ; SI Related Distance Checks        ; Single-ended outputs should be 5 LAB row(s) away from a differential I/O.                            ; High     ; No Differential I/O Standard assignments found.                          ; I/O                 ;                   ;
 ; Inapplicable ; IO_000042 ; SI Related SSO Limit Checks       ; No more than 20 outputs are allowed in a VREF group when VREF is being read from.                    ; High     ; No VREF I/O Standard assignments found.                                  ; I/O                 ;                   ;
@@ -1519,52 +1525,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
-+---------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Pin/Rules           ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
-+---------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass          ; 38        ; 0            ; 38        ; 0            ; 0            ; 38        ; 38        ; 0            ; 38        ; 38        ; 0            ; 29           ; 0            ; 0            ; 9            ; 0            ; 29           ; 9            ; 0            ; 0            ; 0            ; 29           ; 0            ; 0            ; 0            ; 0            ; 0            ; 38        ; 0            ; 0            ;
-; Total Unchecked     ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable  ; 0         ; 38           ; 0         ; 38           ; 38           ; 0         ; 0         ; 38           ; 0         ; 0         ; 38           ; 9            ; 38           ; 38           ; 29           ; 38           ; 9            ; 29           ; 38           ; 38           ; 38           ; 9            ; 38           ; 38           ; 38           ; 38           ; 38           ; 0         ; 38           ; 38           ;
-; Total Fail          ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Hsync               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Vsync               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg1[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg1[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg1[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg1[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg1[4]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg1[5]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg1[6]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg2[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg2[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg2[2]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg2[3]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg2[4]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg2[5]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; seg2[6]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; bar                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; R[0]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; R[1]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; R[2]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; R[3]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; G[0]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; G[1]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; G[2]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; G[3]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[0]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[1]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[2]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; B[3]                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; reset               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; direction_switch[1] ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; direction_switch[0] ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; direction_switch[3] ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; direction_switch[2] ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; clk                 ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; start_game          ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; ball_speed[0]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; ball_speed[1]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-+---------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
++---------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
+; Pin/Rules           ; IO_000002    ; IO_000001 ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000047    ; IO_000046    ; IO_000045    ; IO_000027    ; IO_000026    ; IO_000024    ; IO_000023    ; IO_000022    ; IO_000021    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000033 ; IO_000034    ; IO_000042    ;
++---------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
+; Total Pass          ; 0            ; 38        ; 38        ; 0            ; 0            ; 38        ; 38        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 29           ; 0            ; 0            ; 0            ; 9            ; 29           ; 0            ; 9            ; 0            ; 0            ; 29           ; 0            ; 38        ; 38        ; 38        ; 0            ; 0            ;
+; Total Unchecked     ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
+; Total Inapplicable  ; 38           ; 0         ; 0         ; 38           ; 38           ; 0         ; 0         ; 38           ; 38           ; 38           ; 38           ; 38           ; 38           ; 9            ; 38           ; 38           ; 38           ; 29           ; 9            ; 38           ; 29           ; 38           ; 38           ; 9            ; 38           ; 0         ; 0         ; 0         ; 38           ; 38           ;
+; Total Fail          ; 0            ; 0         ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
+; Hsync               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; Vsync               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg1[0]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg1[1]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg1[2]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg1[3]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg1[4]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg1[5]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg1[6]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg2[0]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg2[1]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg2[2]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg2[3]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg2[4]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg2[5]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; seg2[6]             ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; bar                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; R[0]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; R[1]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; R[2]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; R[3]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; G[0]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; G[1]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; G[2]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; G[3]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; B[0]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; B[1]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; B[2]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; B[3]                ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; reset               ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; direction_switch[1] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; direction_switch[0] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; direction_switch[3] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; direction_switch[2] ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; clk                 ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; start_game          ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; ball_speed[0]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; ball_speed[1]       ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
++---------------------+--------------+-----------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------+
@@ -1609,20 +1615,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------+-------------------------+-------------------+
 ; Source Clock(s)                                         ; Destination Clock(s)    ; Delay Added in ns ;
 +---------------------------------------------------------+-------------------------+-------------------+
-; div_gen:U0|temp,ball_speed[0],reset,I/O                 ; ball_speed[0]           ; 164.6             ;
-; div_gen:U0|temp,ball_speed[0],reset,div_gen:u3|temp,I/O ; ball_speed[0]           ; 36.6              ;
-; I/O                                                     ; clk                     ; 32.6              ;
-; I/O                                                     ; div_gen:u3|temp         ; 18.5              ;
-; I/O                                                     ; div_gen:U0|temp         ; 17.8              ;
-; div_gen:U0|temp,ball_speed[0],reset,I/O                 ; reset                   ; 14.5              ;
-; I/O                                                     ; sync_generator:u1|Hsync ; 11.2              ;
-; div_gen:U0|temp                                         ; div_gen:U0|temp         ; 9.7               ;
-; clk                                                     ; clk                     ; 8.9               ;
-; div_gen:u3|temp                                         ; ball_speed[0]           ; 5.9               ;
-; div_gen:U0|temp,I/O                                     ; div_gen:U0|temp         ; 5.5               ;
+; div_gen:U0|temp,ball_speed[0],reset,I/O                 ; ball_speed[0]           ; 139.0             ;
+; div_gen:U0|temp,ball_speed[0],reset,div_gen:u3|temp,I/O ; ball_speed[0]           ; 29.8              ;
+; I/O                                                     ; clk                     ; 26.0              ;
+; I/O                                                     ; div_gen:U0|temp         ; 25.9              ;
+; I/O                                                     ; div_gen:u3|temp         ; 14.5              ;
+; I/O                                                     ; sync_generator:u1|Hsync ; 11.8              ;
+; div_gen:U0|temp,ball_speed[0],reset,I/O                 ; reset                   ; 11.4              ;
+; div_gen:U0|temp                                         ; div_gen:U0|temp         ; 9.3               ;
+; clk                                                     ; clk                     ; 6.5               ;
+; div_gen:U0|temp,I/O                                     ; div_gen:U0|temp         ; 5.6               ;
 +---------------------------------------------------------+-------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
-This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
 +---------------------------------------------------------------------------------------------------------------------+
@@ -1630,81 +1635,81 @@ This will disable optimization of problematic paths and expose them for further 
 +------------------------------------------------+------------------------------------------------+-------------------+
 ; Source Register                                ; Destination Register                           ; Delay Added in ns ;
 +------------------------------------------------+------------------------------------------------+-------------------+
-; reset                                          ; image_generator:u2|Ball_direction[0]~_emulated ; 7.127             ;
-; image_generator:u2|state                       ; image_generator:u2|Ball_direction[0]~_emulated ; 7.127             ;
-; image_generator:u2|Ball_direction[1]~1         ; image_generator:u2|Ball_direction[0]~_emulated ; 5.435             ;
-; image_generator:u2|Ball_direction[0]~_emulated ; image_generator:u2|Ball_direction[0]~_emulated ; 5.435             ;
-; image_generator:u2|Ball_direction[2]~_emulated ; image_generator:u2|Ball_direction[0]~_emulated ; 5.435             ;
-; image_generator:u2|Ball_direction[1]~_emulated ; image_generator:u2|Ball_direction[0]~_emulated ; 5.435             ;
-; image_generator:u2|Ball_direction[2]~9         ; image_generator:u2|Ball_direction[0]~_emulated ; 5.435             ;
-; image_generator:u2|Ball_direction[0]~5         ; image_generator:u2|Ball_direction[0]~_emulated ; 5.435             ;
-; sync_generator:u1|Hsync                        ; sync_generator:u1|Hsync                        ; 4.894             ;
-; div_gen:U0|temp                                ; div_gen:U0|temp                                ; 4.455             ;
-; div_gen:u3|temp                                ; div_gen:u3|temp                                ; 4.455             ;
-; image_generator:u2|paddle1_pos_y[8]            ; image_generator:u2|Ball_direction[1]~_emulated ; 4.141             ;
-; image_generator:u2|paddle1_pos_y[1]            ; image_generator:u2|Ball_direction[1]~_emulated ; 4.067             ;
-; image_generator:u2|paddle1_pos_y[7]            ; image_generator:u2|Ball_direction[1]~_emulated ; 4.034             ;
-; image_generator:u2|paddle1_pos_y[9]            ; image_generator:u2|Ball_direction[1]~_emulated ; 4.011             ;
-; image_generator:u2|paddle1_pos_y[6]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.992             ;
-; image_generator:u2|paddle1_pos_y[4]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.933             ;
-; image_generator:u2|paddle1_pos_y[5]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.923             ;
-; image_generator:u2|paddle1_pos_y[0]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.921             ;
-; image_generator:u2|paddle1_pos_y[3]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.892             ;
-; image_generator:u2|paddle1_pos_y[2]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.892             ;
-; image_generator:u2|Ball_pos_x[8]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[6]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[4]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[3]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[5]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[2]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[1]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[7]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[0]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|Ball_pos_x[9]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.505             ;
-; image_generator:u2|paddle2_pos_y[9]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.426             ;
-; image_generator:u2|paddle2_pos_y[1]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.318             ;
-; image_generator:u2|Ball_pos_y[9]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[8]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[7]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[6]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[4]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[3]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[2]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[5]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[1]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|Ball_pos_y[0]               ; image_generator:u2|Ball_direction[1]~_emulated ; 3.306             ;
-; image_generator:u2|paddle2_pos_y[0]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.296             ;
-; image_generator:u2|paddle2_pos_y[8]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.275             ;
-; image_generator:u2|paddle2_pos_y[7]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.239             ;
-; image_generator:u2|paddle2_pos_y[6]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.239             ;
-; image_generator:u2|paddle2_pos_y[4]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.239             ;
-; image_generator:u2|paddle2_pos_y[3]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.239             ;
-; image_generator:u2|paddle2_pos_y[5]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.239             ;
-; image_generator:u2|paddle2_pos_y[2]            ; image_generator:u2|Ball_direction[1]~_emulated ; 3.239             ;
-; sync_generator:u1|Vcount[9]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[2]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[4]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[6]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[7]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[8]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[1]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[5]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[3]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vcount[0]                    ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Vactive                      ; sync_generator:u1|Vactive                      ; 1.836             ;
-; sync_generator:u1|Hcount[6]                    ; sync_generator:u1|Hactive                      ; 1.744             ;
-; sync_generator:u1|Hcount[5]                    ; sync_generator:u1|Hactive                      ; 1.744             ;
-; sync_generator:u1|Hcount[4]                    ; sync_generator:u1|Hactive                      ; 1.744             ;
-; sync_generator:u1|Hcount[3]                    ; sync_generator:u1|Hactive                      ; 1.744             ;
-; sync_generator:u1|Hcount[2]                    ; sync_generator:u1|Hactive                      ; 1.744             ;
-; sync_generator:u1|Hcount[1]                    ; sync_generator:u1|Hactive                      ; 1.744             ;
-; sync_generator:u1|Hcount[0]                    ; sync_generator:u1|Hactive                      ; 1.744             ;
-; sync_generator:u1|Hcount[9]                    ; sync_generator:u1|Hsync                        ; 1.382             ;
-; sync_generator:u1|Hcount[8]                    ; sync_generator:u1|Hsync                        ; 1.382             ;
-; sync_generator:u1|Hcount[7]                    ; sync_generator:u1|Hsync                        ; 1.382             ;
-; sync_generator:u1|Vsync                        ; image_generator:u2|row_counter[0]              ; 1.223             ;
-; sync_generator:u1|Hactive                      ; sync_generator:u1|Hactive                      ; 0.872             ;
-; image_generator:u2|col_counter[9]              ; image_generator:u2|col_counter[9]              ; 0.089             ;
+; reset                                          ; image_generator:u2|Ball_direction[0]~_emulated ; 6.288             ;
+; image_generator:u2|state                       ; image_generator:u2|Ball_direction[0]~_emulated ; 6.288             ;
+; image_generator:u2|Ball_direction[1]~1         ; image_generator:u2|Ball_direction[0]~_emulated ; 4.909             ;
+; image_generator:u2|Ball_direction[0]~_emulated ; image_generator:u2|Ball_direction[0]~_emulated ; 4.909             ;
+; image_generator:u2|Ball_direction[2]~_emulated ; image_generator:u2|Ball_direction[0]~_emulated ; 4.909             ;
+; image_generator:u2|Ball_direction[1]~_emulated ; image_generator:u2|Ball_direction[0]~_emulated ; 4.909             ;
+; image_generator:u2|Ball_direction[2]~9         ; image_generator:u2|Ball_direction[0]~_emulated ; 4.909             ;
+; image_generator:u2|Ball_direction[0]~5         ; image_generator:u2|Ball_direction[0]~_emulated ; 4.909             ;
+; sync_generator:u1|Hsync                        ; sync_generator:u1|Hsync                        ; 4.746             ;
+; image_generator:u2|Ball_pos_x[8]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[6]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[4]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[3]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[5]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[2]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[1]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[7]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[0]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; image_generator:u2|Ball_pos_x[9]               ; image_generator:u2|Ball_direction[2]~_emulated ; 3.309             ;
+; div_gen:U0|temp                                ; div_gen:U0|temp                                ; 3.290             ;
+; div_gen:u3|temp                                ; div_gen:u3|temp                                ; 3.165             ;
+; image_generator:u2|paddle1_pos_y[7]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.777             ;
+; image_generator:u2|paddle1_pos_y[9]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.733             ;
+; image_generator:u2|paddle1_pos_y[6]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.733             ;
+; image_generator:u2|paddle1_pos_y[5]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.733             ;
+; image_generator:u2|paddle1_pos_y[4]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.733             ;
+; image_generator:u2|paddle1_pos_y[3]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.733             ;
+; image_generator:u2|paddle1_pos_y[2]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.733             ;
+; image_generator:u2|paddle1_pos_y[8]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.733             ;
+; image_generator:u2|paddle1_pos_y[1]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.733             ;
+; image_generator:u2|paddle1_pos_y[0]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[9]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[8]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[7]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[6]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[4]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[3]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[2]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[5]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[1]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|Ball_pos_y[0]               ; image_generator:u2|Ball_direction[1]~_emulated ; 2.654             ;
+; image_generator:u2|paddle2_pos_y[9]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[8]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[7]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[6]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[4]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[3]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[5]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[1]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[0]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; image_generator:u2|paddle2_pos_y[2]            ; image_generator:u2|Ball_direction[1]~_emulated ; 2.651             ;
+; sync_generator:u1|Vcount[9]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[2]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[4]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[6]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[7]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[8]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[1]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[5]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[3]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vcount[0]                    ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Vactive                      ; sync_generator:u1|Vactive                      ; 2.104             ;
+; sync_generator:u1|Hcount[6]                    ; sync_generator:u1|Hactive                      ; 1.846             ;
+; sync_generator:u1|Hcount[5]                    ; sync_generator:u1|Hactive                      ; 1.846             ;
+; sync_generator:u1|Hcount[4]                    ; sync_generator:u1|Hactive                      ; 1.846             ;
+; sync_generator:u1|Hcount[3]                    ; sync_generator:u1|Hactive                      ; 1.846             ;
+; sync_generator:u1|Hcount[2]                    ; sync_generator:u1|Hactive                      ; 1.846             ;
+; sync_generator:u1|Hcount[1]                    ; sync_generator:u1|Hactive                      ; 1.846             ;
+; sync_generator:u1|Hcount[0]                    ; sync_generator:u1|Hactive                      ; 1.846             ;
+; sync_generator:u1|Hcount[9]                    ; sync_generator:u1|Hsync                        ; 1.599             ;
+; sync_generator:u1|Hcount[8]                    ; sync_generator:u1|Hsync                        ; 1.599             ;
+; sync_generator:u1|Hcount[7]                    ; sync_generator:u1|Hsync                        ; 1.599             ;
+; sync_generator:u1|Vsync                        ; image_generator:u2|row_counter[0]              ; 1.323             ;
+; sync_generator:u1|Hactive                      ; sync_generator:u1|Hactive                      ; 0.923             ;
+; image_generator:u2|col_counter[9]              ; image_generator:u2|col_counter[9]              ; 0.071             ;
 +------------------------------------------------+------------------------------------------------+-------------------+
 Note: This table only shows the top 75 path(s) that have the largest delay added for hold.
 
@@ -1713,7 +1718,7 @@ Note: This table only shows the top 75 path(s) that have the largest delay added
 ; Fitter Messages ;
 +-----------------+
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Warning (12473): User specified to use only one processors but 4 processors were detected which could be used to decrease run time.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (119006): Selected device 10M50DAF484C7G for design "VGA"
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1722,8 +1727,11 @@ Warning (292013): Feature LogicLock is only available with a valid subscription 
 Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
     Info (176445): Device 10M08DAF484I7G is compatible
     Info (176445): Device 10M08DAF484I7P is compatible
+    Info (176445): Device 10M16DAF484A7G is compatible
     Info (176445): Device 10M16DAF484C7G is compatible
     Info (176445): Device 10M16DAF484I7G is compatible
+    Info (176445): Device 10M16DAF484I7P is compatible
+    Info (176445): Device 10M25DAF484A7G is compatible
     Info (176445): Device 10M25DAF484C7G is compatible
     Info (176445): Device 10M25DAF484I7G is compatible
     Info (176445): Device 10M50DAF484I7G is compatible
@@ -1744,10 +1752,10 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Warning (335093): TimeQuest Timing Analyzer is analyzing 3 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'VGA.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning (335093): The Timing Analyzer is analyzing 3 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'VGA.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
-Warning (332125): Found combinational loop of 18 nodes File: C:/Users/val/Downloads/Pong-FPGA-master/image_generator.vhd Line: 169
+Warning (332125): Found combinational loop of 18 nodes File: /home/leo/FPGAPong/image_generator.vhd Line: 169
     Warning (332126): Node "u2|Ball_direction[1]~2|combout"
     Warning (332126): Node "u2|Ball_direction~61|datab"
     Warning (332126): Node "u2|Ball_direction~61|combout"
@@ -1766,42 +1774,42 @@ Warning (332125): Found combinational loop of 18 nodes File: C:/Users/val/Downlo
     Warning (332126): Node "u2|Ball_direction~23|datad"
     Warning (332126): Node "u2|Ball_direction~23|dataa"
     Warning (332126): Node "u2|Ball_direction~67|datad"
-Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
+Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: Mux0~0  from: datac  to: combout
     Info (332098): Cell: rtl~0  from: datac  to: combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk~input (placed in PIN N14 (CLK2p, DIFFIO_RX_R38p, DIFFOUT_R38p, High_Speed)) File: C:/Users/val/Downloads/Pong-FPGA-master/VGA.vhd Line: 28
+Info (176353): Automatically promoted node clk~input (placed in PIN N14 (CLK2p, DIFFIO_RX_R38p, DIFFOUT_R38p, High_Speed)) File: /home/leo/FPGAPong/VGA.vhd Line: 28
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G9
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node div_gen:u5|temp File: C:/Users/val/Downloads/Pong-FPGA-master/div_gen.vhd Line: 25
-        Info (176357): Destination node div_gen:u6|temp File: C:/Users/val/Downloads/Pong-FPGA-master/div_gen.vhd Line: 25
-        Info (176357): Destination node div_gen:u7|temp File: C:/Users/val/Downloads/Pong-FPGA-master/div_gen.vhd Line: 25
-        Info (176357): Destination node div_gen:u8|temp File: C:/Users/val/Downloads/Pong-FPGA-master/div_gen.vhd Line: 25
-Info (176353): Automatically promoted node div_gen:U0|temp  File: C:/Users/val/Downloads/Pong-FPGA-master/div_gen.vhd Line: 25
+        Info (176357): Destination node div_gen:u5|temp File: /home/leo/FPGAPong/div_gen.vhd Line: 25
+        Info (176357): Destination node div_gen:u6|temp File: /home/leo/FPGAPong/div_gen.vhd Line: 25
+        Info (176357): Destination node div_gen:u7|temp File: /home/leo/FPGAPong/div_gen.vhd Line: 25
+        Info (176357): Destination node div_gen:u8|temp File: /home/leo/FPGAPong/div_gen.vhd Line: 25
+Info (176353): Automatically promoted node div_gen:U0|temp  File: /home/leo/FPGAPong/div_gen.vhd Line: 25
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node image_generator:u2|state File: C:/Users/val/Downloads/Pong-FPGA-master/image_generator.vhd Line: 300
-        Info (176357): Destination node div_gen:U0|temp~0 File: C:/Users/val/Downloads/Pong-FPGA-master/div_gen.vhd Line: 25
+        Info (176357): Destination node image_generator:u2|state File: /home/leo/FPGAPong/image_generator.vhd Line: 300
+        Info (176357): Destination node div_gen:U0|temp~0 File: /home/leo/FPGAPong/div_gen.vhd Line: 25
 Info (176353): Automatically promoted node rtl~0 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
-Info (176353): Automatically promoted node sync_generator:u1|Hsync  File: C:/Users/val/Downloads/Pong-FPGA-master/sync_generator.vhd Line: 20
+Info (176353): Automatically promoted node sync_generator:u1|Hsync  File: /home/leo/FPGAPong/sync_generator.vhd Line: 20
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node sync_generator:u1|Hsync~2 File: C:/Users/val/Downloads/Pong-FPGA-master/sync_generator.vhd Line: 20
-        Info (176357): Destination node image_generator:u2|col_counter[9]~27 File: C:/Users/val/Downloads/Pong-FPGA-master/image_generator.vhd Line: 89
-        Info (176357): Destination node Hsync~output File: C:/Users/val/Downloads/Pong-FPGA-master/VGA.vhd Line: 31
-Info (176353): Automatically promoted node div_gen:u3|temp  File: C:/Users/val/Downloads/Pong-FPGA-master/div_gen.vhd Line: 25
+        Info (176357): Destination node sync_generator:u1|Hsync~2 File: /home/leo/FPGAPong/sync_generator.vhd Line: 20
+        Info (176357): Destination node image_generator:u2|col_counter[9]~27 File: /home/leo/FPGAPong/image_generator.vhd Line: 89
+        Info (176357): Destination node Hsync~output File: /home/leo/FPGAPong/VGA.vhd Line: 31
+Info (176353): Automatically promoted node div_gen:u3|temp  File: /home/leo/FPGAPong/div_gen.vhd Line: 25
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node div_gen:u3|temp~0 File: C:/Users/val/Downloads/Pong-FPGA-master/div_gen.vhd Line: 25
+        Info (176357): Destination node div_gen:u3|temp~0 File: /home/leo/FPGAPong/div_gen.vhd Line: 25
 Info (176353): Automatically promoted node image_generator:u2|process_2~0 
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node image_generator:u2|Ball_direction[1]~2 File: C:/Users/val/Downloads/Pong-FPGA-master/image_generator.vhd Line: 169
-        Info (176357): Destination node image_generator:u2|Ball_direction[0]~6 File: C:/Users/val/Downloads/Pong-FPGA-master/image_generator.vhd Line: 169
-        Info (176357): Destination node image_generator:u2|Ball_direction[2]~10 File: C:/Users/val/Downloads/Pong-FPGA-master/image_generator.vhd Line: 169
+        Info (176357): Destination node image_generator:u2|Ball_direction[1]~2 File: /home/leo/FPGAPong/image_generator.vhd Line: 169
+        Info (176357): Destination node image_generator:u2|Ball_direction[0]~6 File: /home/leo/FPGAPong/image_generator.vhd Line: 169
+        Info (176357): Destination node image_generator:u2|Ball_direction[2]~10 File: /home/leo/FPGAPong/image_generator.vhd Line: 169
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1810,37 +1818,37 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "direction_switch[1]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "direction_switch[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "direction_switch[3]" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:07
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:05
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:13
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:07
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 10% of the available device resources in the region that extends from location X56_Y44 to location X66_Y54
+    Info (170196): Router estimated peak interconnect usage is 8% of the available device resources in the region that extends from location X56_Y44 to location X66_Y54
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:24
-Info (11888): Total time spent on timing analysis during the Fitter is 4.66 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:21
+Info (11888): Total time spent on timing analysis during the Fitter is 2.70 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:14
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:07
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/QuarusIIProjects/pong/output_files/VGA.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 31 warnings
-    Info: Peak virtual memory: 5305 megabytes
-    Info: Processing ended: Thu Oct 21 10:28:16 2021
-    Info: Elapsed time: 00:01:22
-    Info: Total CPU time (on all processors): 00:01:26
+Info (144001): Generated suppressed messages file /home/leo/FPGAPong/output_files/VGA.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 862 megabytes
+    Info: Processing ended: Mon Dec 20 12:38:20 2021
+    Info: Elapsed time: 00:01:09
+    Info: Total CPU time (on all processors): 00:01:13
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/QuarusIIProjects/pong/output_files/VGA.fit.smsg.
+The suppressed messages can be found in /home/leo/FPGAPong/output_files/VGA.fit.smsg.
 
 
